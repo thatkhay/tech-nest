@@ -10,7 +10,7 @@ const NavBar = () => {
         <Image src={logo} alt="Logo" className="h-8 w-9" />
         <div className="text-[1rem] font-bold">TechNest</div>
       </div>
-      <div className="flex justify-between items-center w-3/10 text-[1rem] font-semibold ">
+      <div className="flex justify-between items-center w-[30%] text-[1rem] font-semibold [&_a:hover]:text-[#ef3f23] [&_a]:transition-colors">
         <Link href={""}>Buy</Link>
         <Link href={""}>Sell</Link>
         <Link href={""}>Swap</Link>
