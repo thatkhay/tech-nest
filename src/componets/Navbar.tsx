@@ -18,7 +18,7 @@ const NavBar = () => {
         <Link href={""}>Support</Link>
       </div>
       <div className="flex justify-between items-center gap-4">
-        <button className=" bg-white border border-purple-600 text-[#77449D] rounded p-4 font-bold">
+        <button className=" bg-white border border-purple-500 text-[#77449D] rounded p-4 font-bold">
           Sign In
         </button>
         <button className="bg-[#77449D]  text-white rounded p-4 font-bold">
