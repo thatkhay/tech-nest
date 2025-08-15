@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./Button";
-import logo from "@/assets/logo.png"; 
+import logo from "@/assets/logo.png";
 interface NavLink {
   href: string;
   label: string;
@@ -58,7 +58,7 @@ export default function NavBar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-baseline space-x-2 z-50">
+            <Link href="/" className="flex  space-x-2 z-50">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
@@ -67,10 +67,12 @@ export default function NavBar() {
               </motion.div>
               <div
                 className={`text-[1rem] font-bold ${
-                  isScrolled ? "text-gray-900" : "text-white"
+                  isScrolled
+                    ? "text-gray-900"
+                    : "text-white flex flex-col items-center"
                 }`}
               >
-                TechNest
+                Tech <span>Nest</span>
               </div>
             </Link>
 

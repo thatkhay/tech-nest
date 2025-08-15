@@ -1,9 +1,10 @@
 "use client";
-import { JSX, MouseEvent } from "react";
-import NavBar from "@/componets/ui/Navbar";
-import Button from "@/componets/ui/Button";
+import Category from "@/componets/Category";
 import PhonePreview from "@/componets/PhonePreview";
+import Button from "@/componets/ui/Button";
 import Layout from "@/componets/ui/Layout";
+import NavBar from "@/componets/ui/Navbar";
+import { JSX, MouseEvent } from "react";
 
 export default function Home(): JSX.Element {
   const handleSearch = (event: MouseEvent<HTMLButtonElement>): void => {
@@ -91,6 +92,7 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </section>
+      <Category />
     </Layout>
   );
 }
