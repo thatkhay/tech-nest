@@ -3,6 +3,7 @@ import { JSX, MouseEvent } from "react";
 import NavBar from "@/componets/ui/Navbar";
 import Button from "@/componets/ui/Button";
 import PhonePreview from "@/componets/PhonePreview";
+import Layout from "@/componets/ui/Layout";
 
 export default function Home(): JSX.Element {
   const handleSearch = (event: MouseEvent<HTMLButtonElement>): void => {
@@ -11,11 +12,10 @@ export default function Home(): JSX.Element {
   };
 
   return (
-    <div className="min-h-screen">
+    <Layout className="min-h-screen">
       <NavBar />
 
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#0b1e4a] to-[#0e2d66] text-white">
-        {/* subtle grid background */}
         <div
           className="absolute inset-0 -z-10 opacity-25
           [background-image:linear-gradient(to_right,rgba(255,255,255,0.12)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_1px,transparent_1px)]
@@ -24,7 +24,6 @@ export default function Home(): JSX.Element {
 
         <div className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 items-center gap-12">
-            {/* LEFT CONTENT */}
             <div className="order-2 lg:order-1">
               <h1 className="max-w-3xl text-5xl leading-tight font-extrabold sm:text-6xl">
                 Buy, Swap & Sell{" "}
@@ -44,7 +43,6 @@ export default function Home(): JSX.Element {
                 </span>
               </p>
 
-              {/* Search */}
               <div className="mt-8 max-w-2xl">
                 <div className="relative flex items-center rounded-full bg-white/95 ring-4 ring-white/80 shadow-xl">
                   <input
@@ -63,7 +61,6 @@ export default function Home(): JSX.Element {
                 </div>
               </div>
 
-              {/* Stats */}
               <div className="mt-10 flex flex-wrap gap-10 sm:gap-14">
                 <div>
                   <div className="text-3xl font-extrabold text-pink-400">
@@ -86,7 +83,6 @@ export default function Home(): JSX.Element {
               </div>
             </div>
 
-            {/* RIGHT: Phone Preview */}
             <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
               <div className="w-full max-w-[350px] lg:max-w-none lg:w-auto">
                 <PhonePreview />
@@ -95,6 +91,6 @@ export default function Home(): JSX.Element {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   );
 }
