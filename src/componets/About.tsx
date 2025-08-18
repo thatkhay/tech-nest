@@ -57,7 +57,11 @@ const About = () => {
         {/* Features */}
         <div className="mt-12 grid gap-x-12 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (
-            <div key={f.title} className="flex items-start gap-5">
+            <div
+              key={f.title}
+              className="flex items-start gap-4
+            "
+            >
               {/* Gradient icon tile */}
               <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-500 to-purple-500 text-white">
                 <span className="text-2xl leading-none">{f.emoji}</span>
