@@ -1,4 +1,5 @@
 "use client";
+import About from "@/componets/About";
 import Category from "@/componets/Category";
 import PhonePreview from "@/componets/PhonePreview";
 import Button from "@/componets/ui/Button";
@@ -93,6 +94,7 @@ export default function Home(): JSX.Element {
         </div>
       </section>
       <Category />
+      <About />
     </Layout>
   );
 }
