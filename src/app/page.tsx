@@ -2,6 +2,7 @@
 import About from "@/componets/About";
 import Category from "@/componets/Category";
 import PhonePreview from "@/componets/PhonePreview";
+import Semifooter from "@/componets/Semifooter";
 import Button from "@/componets/ui/Button";
 import Layout from "@/componets/ui/Layout";
 import NavBar from "@/componets/ui/Navbar";
@@ -95,6 +96,7 @@ export default function Home(): JSX.Element {
       </section>
       <Category />
       <About />
+      <Semifooter />
     </Layout>
   );
 }
