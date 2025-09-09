@@ -13,7 +13,7 @@ export default function Layout({ children, className = "" }: LayoutProps) {
     <div className="min-h-screen flex flex-col">
       <NavBar />
 
-      <main className={`flex-1 ${className}`}>{children}</main>
+      <main className={`flex-1 pt-16 lg:pt-20 ${className}`}>{children}</main>
 
       <Footer />
     </div>

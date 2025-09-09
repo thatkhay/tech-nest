@@ -5,7 +5,6 @@ import PhonePreview from "@/componets/PhonePreview";
 import Semifooter from "@/componets/Semifooter";
 import Button from "@/componets/ui/Button";
 import Layout from "@/componets/ui/Layout";
-import NavBar from "@/componets/ui/Navbar";
 import { JSX, MouseEvent } from "react";
 
 export default function Home(): JSX.Element {
@@ -16,8 +15,6 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout className="min-h-screen">
-      <NavBar />
-
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#0b1e4a] to-[#0e2d66] text-white">
         <div
           className="absolute inset-0 -z-10 opacity-25
