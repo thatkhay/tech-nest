@@ -50,7 +50,7 @@ export default function Category() {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0b1e4a]">
             Shop by Category
           </h2>
-          <p className="mt-2 text-slate-500">
+          <p className="mt-2 text-slate-600">
             Find exactly what you&apos;re looking for in our curated categories
           </p>
         </div>
