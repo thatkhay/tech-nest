@@ -9,7 +9,7 @@ const page = () => {
       <div className="flex justify-center align-center p-5">
         <Input />
       </div>
-      <div className="mx-auto max-w-7xl px-6 py-10 lg:py-10 bg-blue-600">
+      <div className="">
         <Category />
       </div>
     </Layout>
